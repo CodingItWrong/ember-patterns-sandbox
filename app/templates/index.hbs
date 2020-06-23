@@ -1,3 +1,6 @@
 <NewWidgetForm />
 
-<WidgetList @widgets={{this.model}} />
+<WidgetList
+  @widgets={{this.model}}
+  @onReload={{action send 'refreshModel'}}
+/>

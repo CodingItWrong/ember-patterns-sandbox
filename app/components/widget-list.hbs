@@ -1,3 +1,5 @@
+<button {{on 'click' @onReload}}>Reload</button>
+
 <ul>
   {{#each this.savedWidgets as |widget|}}
     <li>({{widget.id}}) - {{widget.name}}</li>
